@@ -7,9 +7,14 @@ import time
 from utils import load_csv, plot_correlation_matrix
 from model_evaluator import train_and_evaluate_models, get_feature_importance
 from fpdf import FPDF
+
+st.set_page_config(
+    page_title="ML Model Comparator",  # Change the tab name
+    page_icon="📊",  # Change the favicon (You can use an emoji or a custom icon)
+)
 # Header
 st.markdown("""
-    <h1 style='text-align: center;'>📊 Comparative ML Study App</h1>
+    <h1 style='text-align: center;'>📊 ML Model Comparator</h1>
     <hr>
 """, unsafe_allow_html=True)
 
@@ -174,5 +179,9 @@ if uploaded_file:
 # Footer
 st.markdown("""
     <hr>
-    <p style='text-align: center;'>Developed by Viral Chauhan | Powered by Streamlit</p>
+    <p style='text-align: center;'>
+        Developed by <a href="https://www.linkedin.com/in/viral-chauhan-73b67024b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+        Viral Chauhan</a>  | Powered by Streamlit
+    </p>
 """, unsafe_allow_html=True)
+
